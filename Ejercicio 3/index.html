@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Banderas</title>
+
+    <style>
+        .country {
+            box-sizing: border-box;
+            width: 50%;
+            padding: 0;
+            position: relative;
+            float: left;
+        }
+
+        .flag {
+            border: 1px solid black;
+            width: 30vw;
+            height: 40vh;
+        }
+
+        .red-line {
+            height: 30%;
+            background-color: red;
+        }
+
+        .yellow-line {
+            height: 40%;
+            background-color: yellow;
+        }
+
+        .red-background {
+            height: 100%;
+            background-color: red;
+            z-index: -1;
+        }
+
+        .vertical-white-line {
+            position: relative;
+            float: inline-start;
+            bottom: 100%;
+            left: 30%;
+            height: 100%;
+            width: 5%;
+            background-color: white;
+            z-index: 1;
+            
+        }
+        .horizontal-white-line {
+            position: relative;
+            float: inline-start;
+            height: 10%;
+            width: 100%;
+            bottom: 155%;
+            background-color: white;
+            z-index: 2;
+            
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <section class="country">
+        <div class="flag">
+            <div class="red-line"></div>
+            <div class="yellow-line"></div>
+            <div class="red-line"></div>
+        </div>
+        <p>España</p>
+    </section>
+
+    <section class="country">
+        <div class="flag">
+            <div class="red-background"></div>
+            <div class="vertical-white-line"></div>
+            <div class="horizontal-white-line"></div>
+        </div>
+        <p>Dinamarca</p>
+    </section>
+
+    <section class="country">
+        <div class="flag">
+            <div class="flag__emirates"></div>
+        </div>
+        <p>Emiratos Árabes</p>
+    </section>
+
+    <section class="country">
+        <div class="flag">
+            <div class="flag__japan"></div>
+        </div>
+        <p>Japón</p>
+    </section>
+</body>
+
+</html>
